@@ -1,4 +1,4 @@
-# Web Application Development Classes
+# REST API Classes
 
 Sessions will include lecture material & coding challenges. We provide base content for you to use in your learning.
 
