@@ -1,0 +1,27 @@
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "result": {
+    "protocolVersion": "2025-06-18",
+    "capabilities": {
+      "experimental": {},
+      "prompts": { "listChanged": true },
+      "resources": { "subscribe": false, "listChanged": true },
+      "tools": { "listChanged": true },
+      "tasks": {
+        "list": {},
+        "cancel": {},
+        "requests": {
+          "tools": { "call": {} },
+          "prompts": { "get": {} },
+          "resources": { "read": {} }
+        }
+      }
+    },
+    "serverInfo": {
+      "name": "Unit Converter API with MCP",
+      "version": "2.14.5"
+    },
+    "instructions": "Unit conversion tools with supporting resources and prompts."
+  }
+}

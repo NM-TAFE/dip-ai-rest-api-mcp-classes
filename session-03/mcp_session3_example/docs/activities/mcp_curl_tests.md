@@ -1,0 +1,124 @@
+# MCP curl test pack
+
+Use these commands against the running MCP/HTTP server started with `python calculator_api_tutorial.py` (defaults to `http://localhost:8003`).
+
+The MCP endpoints do **not** require auth headers; the plain HTTP conversion routes can optionally accept an `Authorization: Bearer <token>` header (sample tokens are shown below).
+
+**curl flag cheat sheet**
+
+- `-s` Silent mode (hides progress meter/errors; add `-v` when debugging)
+- `-D -` Write response headers to stdout (used to capture `mcp-session-id`)
+- `-o /dev/null` Discard response body while keeping headers
+- `-N` Disable output buffering (needed for event-stream bodies)
+- `-v` Verbose connection/debug output
+- `-L` Follow redirects (helpful if you forget the trailing slash on `/mcp/`)
+
+```bash
+# Optional helpers
+BASE="http://localhost:8003"
+MCP="$BASE/mcp/"   # streamable-http endpoint (note trailing slash to avoid 307)
+SSE="$BASE/sse/"   # SSE endpoint (not used below)
+AUTH="Authorization: Bearer 143f4a46d74fee0d7918b2857577868cb3daf9e6e50ee91c2f7975ba26fdb8f7"
+ACCEPT="Accept: application/json, text/event-stream"  # FastMCP expects both streamable mode
+PROTO="MCP-Protocol-Version: 2025-06-18"
+```
+
+## Quick connectivity + session capture (run this first)
+
+```bash
+SESSION=$(curl -sD - -o /dev/null "$MCP" -H "Content-Type: application/json" -H "$ACCEPT" -H "$PROTO" -d '{"jsonrpc":"2.0","id":0,"method":"initialize","params":{"protocolVersion":"2025-06-18","capabilities":{},"clientInfo":{"name":"curl","version":"1.0"}}}' | awk 'BEGIN{IGNORECASE=1} /^mcp-session-id:/ {sub(/\r$/,""); print $2}')
+echo "SESSION=$SESSION"
+```
+
+- If you see `Connection refused`, the server/port is wrong. Update `BASE`.
+- If you get an HTTP 307 redirect, keep the trailing slash or add `-L` to follow it automatically.
+- If you get a response but no body, remove `-s` from the commands below or keep `-v` while debugging.
+- If `SESSION` prints empty, rerun with `-v` to ensure the header is present.
+
+## 1. MCP handshake
+
+```bash
+curl -s "$MCP" -H "Content-Type: application/json" -H "$ACCEPT" -H "$PROTO" -H "Mcp-Session-Id: $SESSION" -d '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2025-06-18","capabilities":{"roots":{"listChanged":true}},"clientInfo":{"name":"curl","version":"1.0"}}}'
+```
+
+## 2. List and call tools
+
+- List tools
+
+```bash
+curl -s "$MCP" -H "Content-Type: application/json" -H "$ACCEPT" -H "$PROTO" -H "Mcp-Session-Id: $SESSION" -d '{"jsonrpc":"2.0","id":2,"method":"tools/list","params":{}}'
+```
+
+- Call `celsius_to_fahrenheit`
+
+```bash
+curl -s "$MCP" -H "Content-Type: application/json" -H "$ACCEPT" -H "$PROTO" -H "Mcp-Session-Id: $SESSION" -d '{"jsonrpc":"2.0","id":3,"method":"tools/call","params":{"name":"celsius_to_fahrenheit","arguments":{"celsius":25}}}'
+```
+
+- Call `miles_to_kilometers` (shows validation if negative)
+
+```bash
+curl -s "$MCP" -H "Content-Type: application/json" -H "$ACCEPT" -H "$PROTO" -H "Mcp-Session-Id: $SESSION" -d '{"jsonrpc":"2.0","id":4,"method":"tools/call","params":{"name":"miles_to_kilometers","arguments":{"miles":3.1}}}'
+```
+
+## 3. Resources
+
+- List resources
+
+```bash
+curl -s "$MCP" -H "Content-Type: application/json" -H "$ACCEPT" -H "$PROTO" -H "Mcp-Session-Id: $SESSION" -d '{"jsonrpc":"2.0","id":5,"method":"resources/list","params":{}}'
+```
+
+- Read `resource://unit_reference`
+
+```bash
+curl -s "$MCP" -H "Content-Type: application/json" -H "$ACCEPT" -H "$PROTO" -H "Mcp-Session-Id: $SESSION" -d '{"jsonrpc":"2.0","id":6,"method":"resources/read","params":{"uri":"resource://unit_reference"}}'
+```
+
+- Read `resource://troubleshooting_guide`
+
+```bash
+curl -s "$MCP" -H "Content-Type: application/json" -H "$ACCEPT" -H "$PROTO" -H "Mcp-Session-Id: $SESSION" -d '{"jsonrpc":"2.0","id":7,"method":"resources/read","params":{"uri":"resource://troubleshooting_guide"}}'
+```
+
+## 4. Prompts
+
+- List prompts
+
+```bash
+curl -s "$MCP" -H "Content-Type: application/json" -H "$ACCEPT" -H "$PROTO" -H "Mcp-Session-Id: $SESSION" -d '{"jsonrpc":"2.0","id":8,"method":"prompts/list","params":{}}'
+```
+
+- Get `explain_conversion` (fills template arguments)
+
+```bash
+curl -s "$MCP" -H "Content-Type: application/json" -H "$ACCEPT" -H "$PROTO" -H "Mcp-Session-Id: $SESSION" -d '{"jsonrpc":"2.0","id":9,"method":"prompts/get","params":{"name":"explain_conversion","arguments":{"input_value":5,"input_unit":"km","target_unit":"mi"}}}'
+```
+
+- Get `api_usage`
+
+```bash
+curl -s "$MCP" -H "Content-Type: application/json" -H "$ACCEPT" -H "$PROTO" -H "Mcp-Session-Id: $SESSION" -d '{"jsonrpc":"2.0","id":10,"method":"prompts/get","params":{"name":"api_usage","arguments":{"operation":"celsius-to-fahrenheit"}}}'
+```
+
+## 5. Optional plain HTTP endpoint checks
+
+These hit the FastAPI routes directly. Include the `Authorization` header only if your environment enforces it; the sample server accepts requests without it by default.
+
+```bash
+# Miles -> km with token
+curl -s -X POST "$BASE/miles-to-kilometers?miles=3.1" -H "$AUTH"
+
+# Celsius -> Fahrenheit JSON body
+curl -s -X POST "$BASE/celsius-to-fahrenheit" \
+  -H "Content-Type: application/json" -d "25"
+```
+
+Each command returns JSON (tools/resources/prompts over MCP) or plain text/JSON (HTTP endpoints). Adjust `BASE`, `MCP`, or bearer token if you run the server on a different host/port.
+
+## Troubleshooting tips
+
+- Confirm the server log shows `Starting the Unit Converter API server...` and the port matches `BASE`.
+- Try SSE transport if HTTP streaming misbehaves:  
+  `curl -N "$SSE" -H "Content-Type: application/json" -H "Accept: text/event-stream" -d '{"jsonrpc":"2.0","id":11,"method":"tools/list"}'`
+- If you’re on Windows PowerShell, replace single quotes with double quotes and escape inner quotes.
