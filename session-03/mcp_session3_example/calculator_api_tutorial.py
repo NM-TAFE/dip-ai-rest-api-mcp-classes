@@ -14,7 +14,8 @@ import uvicorn
 PORT = 8003  # adjust as needed
 
 # Use a raw string for Windows paths or Path for robustness
-LOG_FILE = Path(r"C:\ProgramData\Laragon\www\repos\REST-API\Material\session3\mcp_session3_example\logs\mcp_log_v1.log")
+# LOG_FILE = Path(r"C:\ProgramData\Laragon\www\repos\REST-API\Material\session3\mcp_session3_example\logs\mcp_log_v1.log")
+LOG_FILE = Path(r".\logs\mcp_log_v1.log")
 
 # 1) Ensure the directory exists
 LOG_FILE.parent.mkdir(parents=True, exist_ok=True)

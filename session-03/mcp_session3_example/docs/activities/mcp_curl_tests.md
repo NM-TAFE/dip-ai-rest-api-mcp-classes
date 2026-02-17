@@ -21,6 +21,17 @@ SSE="$BASE/sse/"   # SSE endpoint (not used below)
 AUTH="Authorization: Bearer 143f4a46d74fee0d7918b2857577868cb3daf9e6e50ee91c2f7975ba26fdb8f7"
 ACCEPT="Accept: application/json, text/event-stream"  # FastMCP expects both streamable mode
 PROTO="MCP-Protocol-Version: 2025-06-18"
+
+
+
+BASE="http://localhost:8003" && \
+MCP="$BASE/mcp/" && \
+SSE="$BASE/sse/" && \
+AUTH="Authorization: Bearer 143f4a46d74fee0d7918b2857577868cb3daf9e6e50ee91c2f7975ba26fdb8f7" && \
+ACCEPT="Accept: application/json, text/event-stream" && \
+PROTO="MCP-Protocol-Version: 2025-06-18"
+
+
 ```
 
 ## Quick connectivity + session capture (run this first)
@@ -92,13 +103,13 @@ curl -s "$MCP" -H "Content-Type: application/json" -H "$ACCEPT" -H "$PROTO" -H "
 - Get `explain_conversion` (fills template arguments)
 
 ```bash
-curl -s "$MCP" -H "Content-Type: application/json" -H "$ACCEPT" -H "$PROTO" -H "Mcp-Session-Id: $SESSION" -d '{"jsonrpc":"2.0","id":9,"method":"prompts/get","params":{"name":"explain_conversion","arguments":{"input_value":5,"input_unit":"km","target_unit":"mi"}}}'
+curl -s "$MCP" -H "Content-Type: application/json" -H "$ACCEPT" -H "$PROTO" -H "Mcp-Session-Id: $SESSION" -d '{"jsonrpc":"2.0","id":9,"method":"prompts/get","params":{"name":"explain_conversion","arguments":{}}}'
 ```
 
 - Get `api_usage`
 
 ```bash
-curl -s "$MCP" -H "Content-Type: application/json" -H "$ACCEPT" -H "$PROTO" -H "Mcp-Session-Id: $SESSION" -d '{"jsonrpc":"2.0","id":10,"method":"prompts/get","params":{"name":"api_usage","arguments":{"operation":"celsius-to-fahrenheit"}}}'
+curl -s "$MCP" -H "Content-Type: application/json" -H "$ACCEPT" -H "$PROTO" -H "Mcp-Session-Id: $SESSION" -d '{"jsonrpc":"2.0","id":10,"method":"prompts/get","params":{"name":"api_usage","arguments":{}}}'
 ```
 
 ## 5. Optional plain HTTP endpoint checks

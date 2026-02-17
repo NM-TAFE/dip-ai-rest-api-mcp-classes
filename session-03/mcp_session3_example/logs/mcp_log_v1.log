@@ -1,0 +1,405 @@
+2026-02-17 10:18:24,594 [INFO] uvicorn.error: Started server process [14408]
+2026-02-17 10:18:24,594 [INFO] uvicorn.error: Waiting for application startup.
+2026-02-17 10:18:24,594 [TRACE] uvicorn.asgi: ASGI [1] Started scope={'type': 'lifespan', 'asgi': {'version': '3.0', 'spec_version': '2.0'}, 'state': {}}
+2026-02-17 10:18:24,594 [TRACE] uvicorn.asgi: ASGI [1] Receive {'type': 'lifespan.startup'}
+2026-02-17 10:18:24,799 [INFO] docket.worker: Starting worker 'NMT-207844#14408' with the following tasks:
+2026-02-17 10:18:24,799 [INFO] docket.worker: * trace(message: str, ...)
+2026-02-17 10:18:24,799 [INFO] docket.worker: * fail(message: str, ...)
+2026-02-17 10:18:24,799 [INFO] docket.worker: * sleep(seconds: float, ...)
+2026-02-17 10:18:24,799 [INFO] mcp.server.streamable_http_manager: StreamableHTTP session manager started
+2026-02-17 10:18:24,799 [TRACE] uvicorn.asgi: ASGI [1] Send {'type': 'lifespan.startup.complete'}
+2026-02-17 10:18:24,799 [INFO] uvicorn.error: Application startup complete.
+2026-02-17 10:18:24,812 [INFO] uvicorn.error: Uvicorn running on http://localhost:8003 (Press CTRL+C to quit)
+2026-02-17 10:19:42,145 [TRACE] uvicorn.error: 127.0.0.1:63020 - HTTP connection made
+2026-02-17 10:19:42,145 [TRACE] uvicorn.asgi: 127.0.0.1:63020 - ASGI [2] Started scope={'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8003), 'client': ('127.0.0.1', 63020), 'scheme': 'http', 'method': 'POST', 'root_path': '', 'path': '/mcp', 'raw_path': b'/mcp', 'query_string': b'', 'headers': '<...>', 'state': {}}
+2026-02-17 10:19:42,145 [TRACE] uvicorn.asgi: 127.0.0.1:63020 - ASGI [2] Send {'type': 'http.response.start', 'status': 307, 'headers': '<...>'}
+2026-02-17 10:19:42,145 [INFO] uvicorn.access: 127.0.0.1:63020 - "POST /mcp HTTP/1.1" 307
+2026-02-17 10:19:42,145 [TRACE] uvicorn.asgi: 127.0.0.1:63020 - ASGI [2] Send {'type': 'http.response.body', 'body': '<0 bytes>'}
+2026-02-17 10:19:42,145 [TRACE] uvicorn.asgi: 127.0.0.1:63020 - ASGI [2] Completed
+2026-02-17 10:19:42,145 [TRACE] uvicorn.asgi: 127.0.0.1:63020 - ASGI [3] Started scope={'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8003), 'client': ('127.0.0.1', 63020), 'scheme': 'http', 'method': 'POST', 'root_path': '', 'path': '/mcp/', 'raw_path': b'/mcp/', 'query_string': b'', 'headers': '<...>', 'state': {}}
+2026-02-17 10:19:42,145 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: c9f57ed17dd643de9e91f42e4edf5e5a
+2026-02-17 10:19:42,145 [TRACE] uvicorn.asgi: 127.0.0.1:63020 - ASGI [3] Send {'type': 'http.response.start', 'status': <HTTPStatus.NOT_ACCEPTABLE: 406>, 'headers': '<...>'}
+2026-02-17 10:19:42,145 [INFO] uvicorn.access: 127.0.0.1:63020 - "POST /mcp/ HTTP/1.1" 406
+2026-02-17 10:19:42,145 [TRACE] uvicorn.asgi: 127.0.0.1:63020 - ASGI [3] Send {'type': 'http.response.body', 'body': '<152 bytes>'}
+2026-02-17 10:19:42,145 [TRACE] uvicorn.asgi: 127.0.0.1:63020 - ASGI [3] Completed
+2026-02-17 10:19:42,145 [TRACE] uvicorn.error: 127.0.0.1:63020 - HTTP connection lost
+2026-02-17 10:19:57,122 [TRACE] uvicorn.error: 127.0.0.1:63021 - HTTP connection made
+2026-02-17 10:19:57,122 [TRACE] uvicorn.asgi: 127.0.0.1:63021 - ASGI [4] Started scope={'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8003), 'client': ('127.0.0.1', 63021), 'scheme': 'http', 'method': 'POST', 'root_path': '', 'path': '/mcp', 'raw_path': b'/mcp', 'query_string': b'', 'headers': '<...>', 'state': {}}
+2026-02-17 10:19:57,123 [TRACE] uvicorn.asgi: 127.0.0.1:63021 - ASGI [4] Send {'type': 'http.response.start', 'status': 307, 'headers': '<...>'}
+2026-02-17 10:19:57,123 [INFO] uvicorn.access: 127.0.0.1:63021 - "POST /mcp HTTP/1.1" 307
+2026-02-17 10:19:57,123 [TRACE] uvicorn.asgi: 127.0.0.1:63021 - ASGI [4] Send {'type': 'http.response.body', 'body': '<0 bytes>'}
+2026-02-17 10:19:57,123 [TRACE] uvicorn.asgi: 127.0.0.1:63021 - ASGI [4] Completed
+2026-02-17 10:19:57,123 [TRACE] uvicorn.error: 127.0.0.1:63021 - HTTP connection lost
+2026-02-17 10:22:37,623 [TRACE] uvicorn.error: 127.0.0.1:55548 - HTTP connection made
+2026-02-17 10:22:37,629 [TRACE] uvicorn.asgi: 127.0.0.1:55548 - ASGI [5] Started scope={'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8003), 'client': ('127.0.0.1', 55548), 'scheme': 'http', 'method': 'POST', 'root_path': '', 'path': '/mcp/', 'raw_path': b'/mcp/', 'query_string': b'', 'headers': '<...>', 'state': {}}
+2026-02-17 10:22:37,629 [INFO] mcp.server.streamable_http_manager: Created new transport with session ID: 5aa1b9fe0d8247d6ac3ba89a0cea4f55
+2026-02-17 10:22:37,629 [TRACE] uvicorn.asgi: 127.0.0.1:55548 - ASGI [5] Receive {'type': 'http.request', 'body': '<151 bytes>', 'more_body': False}
+2026-02-17 10:22:37,629 [TRACE] uvicorn.asgi: 127.0.0.1:55548 - ASGI [5] Send {'type': 'http.response.start', 'status': 200, 'headers': '<...>'}
+2026-02-17 10:22:37,629 [INFO] uvicorn.access: 127.0.0.1:55548 - "POST /mcp/ HTTP/1.1" 200
+2026-02-17 10:22:37,629 [TRACE] uvicorn.asgi: 127.0.0.1:55548 - ASGI [5] Send {'type': 'http.response.body', 'body': '<497 bytes>', 'more_body': True}
+2026-02-17 10:22:37,629 [TRACE] uvicorn.asgi: 127.0.0.1:55548 - ASGI [5] Send {'type': 'http.response.body', 'body': '<0 bytes>', 'more_body': False}
+2026-02-17 10:22:37,629 [TRACE] uvicorn.asgi: 127.0.0.1:55548 - ASGI [5] Receive {'type': 'http.disconnect'}
+2026-02-17 10:22:37,629 [TRACE] uvicorn.error: 127.0.0.1:55548 - HTTP connection lost
+2026-02-17 10:22:37,629 [TRACE] uvicorn.asgi: 127.0.0.1:55548 - ASGI [5] Completed
+2026-02-17 10:22:49,056 [TRACE] uvicorn.error: 127.0.0.1:55549 - HTTP connection made
+2026-02-17 10:22:49,057 [TRACE] uvicorn.asgi: 127.0.0.1:55549 - ASGI [6] Started scope={'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8003), 'client': ('127.0.0.1', 55549), 'scheme': 'http', 'method': 'POST', 'root_path': '', 'path': '/mcp/', 'raw_path': b'/mcp/', 'query_string': b'', 'headers': '<...>', 'state': {}}
+2026-02-17 10:22:49,057 [TRACE] uvicorn.asgi: 127.0.0.1:55549 - ASGI [6] Receive {'type': 'http.request', 'body': '<179 bytes>', 'more_body': False}
+2026-02-17 10:22:49,058 [TRACE] uvicorn.asgi: 127.0.0.1:55549 - ASGI [6] Send {'type': 'http.response.start', 'status': 200, 'headers': '<...>'}
+2026-02-17 10:22:49,058 [INFO] uvicorn.access: 127.0.0.1:55549 - "POST /mcp/ HTTP/1.1" 200
+2026-02-17 10:22:49,058 [TRACE] uvicorn.asgi: 127.0.0.1:55549 - ASGI [6] Send {'type': 'http.response.body', 'body': '<497 bytes>', 'more_body': True}
+2026-02-17 10:22:49,059 [TRACE] uvicorn.asgi: 127.0.0.1:55549 - ASGI [6] Send {'type': 'http.response.body', 'body': '<0 bytes>', 'more_body': False}
+2026-02-17 10:22:49,059 [TRACE] uvicorn.asgi: 127.0.0.1:55549 - ASGI [6] Receive {'type': 'http.disconnect'}
+2026-02-17 10:22:49,059 [TRACE] uvicorn.error: 127.0.0.1:55549 - HTTP connection lost
+2026-02-17 10:22:49,060 [TRACE] uvicorn.asgi: 127.0.0.1:55549 - ASGI [6] Completed
+2026-02-17 10:22:58,536 [TRACE] uvicorn.error: 127.0.0.1:55550 - HTTP connection made
+2026-02-17 10:22:58,539 [TRACE] uvicorn.asgi: 127.0.0.1:55550 - ASGI [7] Started scope={'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8003), 'client': ('127.0.0.1', 55550), 'scheme': 'http', 'method': 'POST', 'root_path': '', 'path': '/mcp/', 'raw_path': b'/mcp/', 'query_string': b'', 'headers': '<...>', 'state': {}}
+2026-02-17 10:22:58,539 [TRACE] uvicorn.asgi: 127.0.0.1:55550 - ASGI [7] Receive {'type': 'http.request', 'body': '<58 bytes>', 'more_body': False}
+2026-02-17 10:22:58,539 [TRACE] uvicorn.asgi: 127.0.0.1:55550 - ASGI [7] Send {'type': 'http.response.start', 'status': 200, 'headers': '<...>'}
+2026-02-17 10:22:58,539 [INFO] uvicorn.access: 127.0.0.1:55550 - "POST /mcp/ HTTP/1.1" 200
+2026-02-17 10:22:58,539 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+2026-02-17 10:22:58,541 [TRACE] uvicorn.asgi: 127.0.0.1:55550 - ASGI [7] Send {'type': 'http.response.body', 'body': '<1708 bytes>', 'more_body': True}
+2026-02-17 10:22:58,541 [TRACE] uvicorn.asgi: 127.0.0.1:55550 - ASGI [7] Send {'type': 'http.response.body', 'body': '<0 bytes>', 'more_body': False}
+2026-02-17 10:22:58,542 [TRACE] uvicorn.asgi: 127.0.0.1:55550 - ASGI [7] Receive {'type': 'http.disconnect'}
+2026-02-17 10:22:58,542 [TRACE] uvicorn.error: 127.0.0.1:55550 - HTTP connection lost
+2026-02-17 10:22:58,542 [TRACE] uvicorn.asgi: 127.0.0.1:55550 - ASGI [7] Completed
+2026-02-17 10:23:17,372 [TRACE] uvicorn.error: 127.0.0.1:55559 - HTTP connection made
+2026-02-17 10:23:17,372 [TRACE] uvicorn.asgi: 127.0.0.1:55559 - ASGI [8] Started scope={'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8003), 'client': ('127.0.0.1', 55559), 'scheme': 'http', 'method': 'POST', 'root_path': '', 'path': '/mcp/', 'raw_path': b'/mcp/', 'query_string': b'', 'headers': '<...>', 'state': {}}
+2026-02-17 10:23:17,372 [TRACE] uvicorn.asgi: 127.0.0.1:55559 - ASGI [8] Receive {'type': 'http.request', 'body': '<115 bytes>', 'more_body': False}
+2026-02-17 10:23:17,372 [TRACE] uvicorn.asgi: 127.0.0.1:55559 - ASGI [8] Send {'type': 'http.response.start', 'status': 200, 'headers': '<...>'}
+2026-02-17 10:23:17,372 [INFO] uvicorn.access: 127.0.0.1:55559 - "POST /mcp/ HTTP/1.1" 200
+2026-02-17 10:23:17,372 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+2026-02-17 10:23:17,375 [WARNING] mcp.server.lowlevel.server: Tool 'celsius_to_fahrenheit' not listed, no validation will be performed
+2026-02-17 10:23:17,375 [TRACE] uvicorn.asgi: 127.0.0.1:55559 - ASGI [8] Send {'type': 'http.response.body', 'body': '<149 bytes>', 'more_body': True}
+2026-02-17 10:23:17,375 [TRACE] uvicorn.asgi: 127.0.0.1:55559 - ASGI [8] Send {'type': 'http.response.body', 'body': '<0 bytes>', 'more_body': False}
+2026-02-17 10:23:17,376 [TRACE] uvicorn.asgi: 127.0.0.1:55559 - ASGI [8] Receive {'type': 'http.disconnect'}
+2026-02-17 10:23:17,376 [TRACE] uvicorn.error: 127.0.0.1:55559 - HTTP connection lost
+2026-02-17 10:23:17,376 [TRACE] uvicorn.asgi: 127.0.0.1:55559 - ASGI [8] Completed
+2026-02-17 10:25:00,295 [TRACE] uvicorn.error: 127.0.0.1:55574 - HTTP connection made
+2026-02-17 10:25:00,295 [TRACE] uvicorn.asgi: 127.0.0.1:55574 - ASGI [9] Started scope={'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8003), 'client': ('127.0.0.1', 55574), 'scheme': 'http', 'method': 'POST', 'root_path': '', 'path': '/mcp/', 'raw_path': b'/mcp/', 'query_string': b'', 'headers': '<...>', 'state': {}}
+2026-02-17 10:25:00,295 [TRACE] uvicorn.asgi: 127.0.0.1:55574 - ASGI [9] Receive {'type': 'http.request', 'body': '<114 bytes>', 'more_body': False}
+2026-02-17 10:25:00,295 [TRACE] uvicorn.asgi: 127.0.0.1:55574 - ASGI [9] Send {'type': 'http.response.start', 'status': 200, 'headers': '<...>'}
+2026-02-17 10:25:00,295 [INFO] uvicorn.access: 127.0.0.1:55574 - "POST /mcp/ HTTP/1.1" 200
+2026-02-17 10:25:00,295 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+2026-02-17 10:25:00,295 [WARNING] mcp.server.lowlevel.server: Tool 'celsius_tofahrenheit' not listed, no validation will be performed
+2026-02-17 10:25:00,295 [TRACE] uvicorn.asgi: 127.0.0.1:55574 - ASGI [9] Send {'type': 'http.response.body', 'body': '<148 bytes>', 'more_body': True}
+2026-02-17 10:25:00,295 [TRACE] uvicorn.asgi: 127.0.0.1:55574 - ASGI [9] Send {'type': 'http.response.body', 'body': '<0 bytes>', 'more_body': False}
+2026-02-17 10:25:00,300 [TRACE] uvicorn.asgi: 127.0.0.1:55574 - ASGI [9] Receive {'type': 'http.disconnect'}
+2026-02-17 10:25:00,300 [TRACE] uvicorn.error: 127.0.0.1:55574 - HTTP connection lost
+2026-02-17 10:25:00,300 [TRACE] uvicorn.asgi: 127.0.0.1:55574 - ASGI [9] Completed
+2026-02-17 10:27:18,804 [TRACE] uvicorn.error: 127.0.0.1:62738 - HTTP connection made
+2026-02-17 10:27:18,804 [TRACE] uvicorn.asgi: 127.0.0.1:62738 - ASGI [10] Started scope={'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8003), 'client': ('127.0.0.1', 62738), 'scheme': 'http', 'method': 'POST', 'root_path': '', 'path': '/mcp/', 'raw_path': b'/mcp/', 'query_string': b'', 'headers': '<...>', 'state': {}}
+2026-02-17 10:27:18,804 [TRACE] uvicorn.asgi: 127.0.0.1:62738 - ASGI [10] Receive {'type': 'http.request', 'body': '<115 bytes>', 'more_body': False}
+2026-02-17 10:27:18,804 [TRACE] uvicorn.asgi: 127.0.0.1:62738 - ASGI [10] Send {'type': 'http.response.start', 'status': 200, 'headers': '<...>'}
+2026-02-17 10:27:18,804 [INFO] uvicorn.access: 127.0.0.1:62738 - "POST /mcp/ HTTP/1.1" 200
+2026-02-17 10:27:18,804 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+2026-02-17 10:27:18,804 [WARNING] mcp.server.lowlevel.server: Tool 'celsius_to_fahrenheit' not listed, no validation will be performed
+2026-02-17 10:27:18,804 [TRACE] uvicorn.asgi: 127.0.0.1:62738 - ASGI [10] Send {'type': 'http.response.body', 'body': '<149 bytes>', 'more_body': True}
+2026-02-17 10:27:18,804 [TRACE] uvicorn.asgi: 127.0.0.1:62738 - ASGI [10] Send {'type': 'http.response.body', 'body': '<0 bytes>', 'more_body': False}
+2026-02-17 10:27:18,820 [TRACE] uvicorn.asgi: 127.0.0.1:62738 - ASGI [10] Receive {'type': 'http.disconnect'}
+2026-02-17 10:27:18,820 [TRACE] uvicorn.error: 127.0.0.1:62738 - HTTP connection lost
+2026-02-17 10:27:18,820 [TRACE] uvicorn.asgi: 127.0.0.1:62738 - ASGI [10] Completed
+2026-02-17 10:28:23,855 [TRACE] uvicorn.error: 127.0.0.1:53609 - HTTP connection made
+2026-02-17 10:28:23,856 [TRACE] uvicorn.asgi: 127.0.0.1:53609 - ASGI [11] Started scope={'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8003), 'client': ('127.0.0.1', 53609), 'scheme': 'http', 'method': 'POST', 'root_path': '', 'path': '/mcp/', 'raw_path': b'/mcp/', 'query_string': b'', 'headers': '<...>', 'state': {}}
+2026-02-17 10:28:23,856 [TRACE] uvicorn.asgi: 127.0.0.1:53609 - ASGI [11] Receive {'type': 'http.request', 'body': '<58 bytes>', 'more_body': False}
+2026-02-17 10:28:23,857 [TRACE] uvicorn.asgi: 127.0.0.1:53609 - ASGI [11] Send {'type': 'http.response.start', 'status': 200, 'headers': '<...>'}
+2026-02-17 10:28:23,857 [INFO] uvicorn.access: 127.0.0.1:53609 - "POST /mcp/ HTTP/1.1" 200
+2026-02-17 10:28:23,857 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
+2026-02-17 10:28:23,858 [TRACE] uvicorn.asgi: 127.0.0.1:53609 - ASGI [11] Send {'type': 'http.response.body', 'body': '<1708 bytes>', 'more_body': True}
+2026-02-17 10:28:23,858 [TRACE] uvicorn.asgi: 127.0.0.1:53609 - ASGI [11] Send {'type': 'http.response.body', 'body': '<0 bytes>', 'more_body': False}
+2026-02-17 10:28:23,858 [TRACE] uvicorn.asgi: 127.0.0.1:53609 - ASGI [11] Receive {'type': 'http.disconnect'}
+2026-02-17 10:28:23,859 [TRACE] uvicorn.error: 127.0.0.1:53609 - HTTP connection lost
+2026-02-17 10:28:23,859 [TRACE] uvicorn.asgi: 127.0.0.1:53609 - ASGI [11] Completed
+2026-02-17 10:30:33,673 [TRACE] uvicorn.error: 127.0.0.1:61033 - HTTP connection made
+2026-02-17 10:30:33,673 [TRACE] uvicorn.asgi: 127.0.0.1:61033 - ASGI [12] Started scope={'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8003), 'client': ('127.0.0.1', 61033), 'scheme': 'http', 'method': 'POST', 'root_path': '', 'path': '/mcp/', 'raw_path': b'/mcp/', 'query_string': b'', 'headers': '<...>', 'state': {}}
+2026-02-17 10:30:33,674 [TRACE] uvicorn.asgi: 127.0.0.1:61033 - ASGI [12] Receive {'type': 'http.request', 'body': '<142 bytes>', 'more_body': False}
+2026-02-17 10:30:33,674 [TRACE] uvicorn.asgi: 127.0.0.1:61033 - ASGI [12] Send {'type': 'http.response.start', 'status': 200, 'headers': '<...>'}
+2026-02-17 10:30:33,675 [INFO] uvicorn.access: 127.0.0.1:61033 - "POST /mcp/ HTTP/1.1" 200
+2026-02-17 10:30:33,675 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+2026-02-17 10:30:33,675 [WARNING] mcp.server.lowlevel.server: Tool 'celsius_to_fahrenheit_celcius_to_fahrenheit_post' not listed, no validation will be performed
+2026-02-17 10:30:33,676 [TRACE] uvicorn.asgi: 127.0.0.1:61033 - ASGI [12] Send {'type': 'http.response.body', 'body': '<176 bytes>', 'more_body': True}
+2026-02-17 10:30:33,676 [TRACE] uvicorn.asgi: 127.0.0.1:61033 - ASGI [12] Send {'type': 'http.response.body', 'body': '<0 bytes>', 'more_body': False}
+2026-02-17 10:30:33,677 [TRACE] uvicorn.asgi: 127.0.0.1:61033 - ASGI [12] Receive {'type': 'http.disconnect'}
+2026-02-17 10:30:33,677 [TRACE] uvicorn.error: 127.0.0.1:61033 - HTTP connection lost
+2026-02-17 10:30:33,677 [TRACE] uvicorn.asgi: 127.0.0.1:61033 - ASGI [12] Completed
+2026-02-17 10:33:20,442 [TRACE] uvicorn.error: 127.0.0.1:64386 - HTTP connection made
+2026-02-17 10:33:20,453 [TRACE] uvicorn.asgi: 127.0.0.1:64386 - ASGI [13] Started scope={'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8003), 'client': ('127.0.0.1', 64386), 'scheme': 'http', 'method': 'POST', 'root_path': '', 'path': '/mcp/', 'raw_path': b'/mcp/', 'query_string': b'', 'headers': '<...>', 'state': {}}
+2026-02-17 10:33:20,453 [TRACE] uvicorn.asgi: 127.0.0.1:64386 - ASGI [13] Receive {'type': 'http.request', 'body': '<142 bytes>', 'more_body': False}
+2026-02-17 10:33:20,454 [TRACE] uvicorn.asgi: 127.0.0.1:64386 - ASGI [13] Send {'type': 'http.response.start', 'status': 200, 'headers': '<...>'}
+2026-02-17 10:33:20,454 [INFO] uvicorn.access: 127.0.0.1:64386 - "POST /mcp/ HTTP/1.1" 200
+2026-02-17 10:33:20,455 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
+2026-02-17 10:33:20,492 [INFO] httpx: HTTP Request: POST http://fastapi/celsius-to-fahrenheit?celsius=25 "HTTP/1.1 200 OK"
+2026-02-17 10:33:20,493 [TRACE] uvicorn.asgi: 127.0.0.1:64386 - ASGI [13] Send {'type': 'http.response.body', 'body': '<244 bytes>', 'more_body': True}
+2026-02-17 10:33:20,493 [TRACE] uvicorn.asgi: 127.0.0.1:64386 - ASGI [13] Send {'type': 'http.response.body', 'body': '<0 bytes>', 'more_body': False}
+2026-02-17 10:33:20,494 [TRACE] uvicorn.asgi: 127.0.0.1:64386 - ASGI [13] Receive {'type': 'http.disconnect'}
+2026-02-17 10:33:20,494 [TRACE] uvicorn.error: 127.0.0.1:64386 - HTTP connection lost
+2026-02-17 10:33:20,494 [TRACE] uvicorn.asgi: 127.0.0.1:64386 - ASGI [13] Completed
+2026-02-17 10:35:11,955 [TRACE] uvicorn.error: 127.0.0.1:58069 - HTTP connection made
+2026-02-17 10:35:11,955 [TRACE] uvicorn.asgi: 127.0.0.1:58069 - ASGI [14] Started scope={'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8003), 'client': ('127.0.0.1', 58069), 'scheme': 'http', 'method': 'POST', 'root_path': '', 'path': '/mcp/', 'raw_path': b'/mcp/', 'query_string': b'', 'headers': '<...>', 'state': {}}
+2026-02-17 10:35:11,955 [TRACE] uvicorn.asgi: 127.0.0.1:58069 - ASGI [14] Receive {'type': 'http.request', 'body': '<62 bytes>', 'more_body': False}
+2026-02-17 10:35:11,955 [TRACE] uvicorn.asgi: 127.0.0.1:58069 - ASGI [14] Send {'type': 'http.response.start', 'status': 200, 'headers': '<...>'}
+2026-02-17 10:35:11,955 [INFO] uvicorn.access: 127.0.0.1:58069 - "POST /mcp/ HTTP/1.1" 200
+2026-02-17 10:35:11,955 [INFO] mcp.server.lowlevel.server: Processing request of type ListResourcesRequest
+2026-02-17 10:35:11,955 [TRACE] uvicorn.asgi: 127.0.0.1:58069 - ASGI [14] Send {'type': 'http.response.body', 'body': '<340 bytes>', 'more_body': True}
+2026-02-17 10:35:11,955 [TRACE] uvicorn.asgi: 127.0.0.1:58069 - ASGI [14] Send {'type': 'http.response.body', 'body': '<0 bytes>', 'more_body': False}
+2026-02-17 10:35:11,955 [TRACE] uvicorn.asgi: 127.0.0.1:58069 - ASGI [14] Receive {'type': 'http.disconnect'}
+2026-02-17 10:35:11,955 [TRACE] uvicorn.error: 127.0.0.1:58069 - HTTP connection lost
+2026-02-17 10:35:11,955 [TRACE] uvicorn.asgi: 127.0.0.1:58069 - ASGI [14] Completed
+2026-02-17 10:35:25,459 [TRACE] uvicorn.error: 127.0.0.1:57745 - HTTP connection made
+2026-02-17 10:35:25,460 [TRACE] uvicorn.asgi: 127.0.0.1:57745 - ASGI [15] Started scope={'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8003), 'client': ('127.0.0.1', 57745), 'scheme': 'http', 'method': 'POST', 'root_path': '', 'path': '/mcp/', 'raw_path': b'/mcp/', 'query_string': b'', 'headers': '<...>', 'state': {}}
+2026-02-17 10:35:25,461 [TRACE] uvicorn.asgi: 127.0.0.1:57745 - ASGI [15] Receive {'type': 'http.request', 'body': '<95 bytes>', 'more_body': False}
+2026-02-17 10:35:25,461 [TRACE] uvicorn.asgi: 127.0.0.1:57745 - ASGI [15] Send {'type': 'http.response.start', 'status': 200, 'headers': '<...>'}
+2026-02-17 10:35:25,462 [INFO] uvicorn.access: 127.0.0.1:57745 - "POST /mcp/ HTTP/1.1" 200
+2026-02-17 10:35:25,462 [INFO] mcp.server.lowlevel.server: Processing request of type ReadResourceRequest
+2026-02-17 10:35:25,463 [TRACE] uvicorn.asgi: 127.0.0.1:57745 - ASGI [15] Send {'type': 'http.response.body', 'body': '<820 bytes>', 'more_body': True}
+2026-02-17 10:35:25,464 [TRACE] uvicorn.asgi: 127.0.0.1:57745 - ASGI [15] Send {'type': 'http.response.body', 'body': '<0 bytes>', 'more_body': False}
+2026-02-17 10:35:25,464 [TRACE] uvicorn.asgi: 127.0.0.1:57745 - ASGI [15] Receive {'type': 'http.disconnect'}
+2026-02-17 10:35:25,464 [TRACE] uvicorn.error: 127.0.0.1:57745 - HTTP connection lost
+2026-02-17 10:35:25,465 [TRACE] uvicorn.asgi: 127.0.0.1:57745 - ASGI [15] Completed
+2026-02-17 10:46:20,247 [TRACE] uvicorn.error: 127.0.0.1:55458 - HTTP connection made
+2026-02-17 10:46:20,247 [TRACE] uvicorn.asgi: 127.0.0.1:55458 - ASGI [16] Started scope={'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8003), 'client': ('127.0.0.1', 55458), 'scheme': 'http', 'method': 'POST', 'root_path': '', 'path': '/mcp/', 'raw_path': b'/mcp/', 'query_string': b'', 'headers': '<...>', 'state': {}}
+2026-02-17 10:46:20,247 [TRACE] uvicorn.asgi: 127.0.0.1:55458 - ASGI [16] Receive {'type': 'http.request', 'body': '<60 bytes>', 'more_body': False}
+2026-02-17 10:46:20,247 [TRACE] uvicorn.asgi: 127.0.0.1:55458 - ASGI [16] Send {'type': 'http.response.start', 'status': 200, 'headers': '<...>'}
+2026-02-17 10:46:20,247 [INFO] uvicorn.access: 127.0.0.1:55458 - "POST /mcp/ HTTP/1.1" 200
+2026-02-17 10:46:20,247 [INFO] mcp.server.lowlevel.server: Processing request of type ListPromptsRequest
+2026-02-17 10:46:20,247 [TRACE] uvicorn.asgi: 127.0.0.1:55458 - ASGI [16] Send {'type': 'http.response.body', 'body': '<353 bytes>', 'more_body': True}
+2026-02-17 10:46:20,247 [TRACE] uvicorn.asgi: 127.0.0.1:55458 - ASGI [16] Send {'type': 'http.response.body', 'body': '<0 bytes>', 'more_body': False}
+2026-02-17 10:46:20,247 [TRACE] uvicorn.asgi: 127.0.0.1:55458 - ASGI [16] Receive {'type': 'http.disconnect'}
+2026-02-17 10:46:20,247 [TRACE] uvicorn.error: 127.0.0.1:55458 - HTTP connection lost
+2026-02-17 10:46:20,247 [TRACE] uvicorn.asgi: 127.0.0.1:55458 - ASGI [16] Completed
+2026-02-17 10:46:36,752 [TRACE] uvicorn.error: 127.0.0.1:55459 - HTTP connection made
+2026-02-17 10:46:36,752 [TRACE] uvicorn.asgi: 127.0.0.1:55459 - ASGI [17] Started scope={'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8003), 'client': ('127.0.0.1', 55459), 'scheme': 'http', 'method': 'POST', 'root_path': '', 'path': '/mcp/', 'raw_path': b'/mcp/', 'query_string': b'', 'headers': '<...>', 'state': {}}
+2026-02-17 10:46:36,752 [TRACE] uvicorn.asgi: 127.0.0.1:55459 - ASGI [17] Receive {'type': 'http.request', 'body': '<153 bytes>', 'more_body': False}
+2026-02-17 10:46:36,754 [TRACE] uvicorn.asgi: 127.0.0.1:55459 - ASGI [17] Send {'type': 'http.response.start', 'status': 200, 'headers': '<...>'}
+2026-02-17 10:46:36,754 [INFO] uvicorn.access: 127.0.0.1:55459 - "POST /mcp/ HTTP/1.1" 200
+2026-02-17 10:46:36,754 [WARNING] root: Failed to validate request: 29 validation errors for ClientRequest
+PingRequest.method
+  Input should be 'ping' [type=literal_error, input_value='prompts/get', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+InitializeRequest.method
+  Input should be 'initialize' [type=literal_error, input_value='prompts/get', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+InitializeRequest.params.protocolVersion
+  Field required [type=missing, input_value={'name': 'explain_convers...', 'target_unit': 'mi'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+InitializeRequest.params.capabilities
+  Field required [type=missing, input_value={'name': 'explain_convers...', 'target_unit': 'mi'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+InitializeRequest.params.clientInfo
+  Field required [type=missing, input_value={'name': 'explain_convers...', 'target_unit': 'mi'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+CompleteRequest.method
+  Input should be 'completion/complete' [type=literal_error, input_value='prompts/get', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+CompleteRequest.params.ref
+  Field required [type=missing, input_value={'name': 'explain_convers...', 'target_unit': 'mi'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+CompleteRequest.params.argument
+  Field required [type=missing, input_value={'name': 'explain_convers...', 'target_unit': 'mi'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+SetLevelRequest.method
+  Input should be 'logging/setLevel' [type=literal_error, input_value='prompts/get', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+SetLevelRequest.params.level
+  Field required [type=missing, input_value={'name': 'explain_convers...', 'target_unit': 'mi'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+GetPromptRequest.params.arguments.input_value
+  Input should be a valid string [type=string_type, input_value=5, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+ListPromptsRequest.method
+  Input should be 'prompts/list' [type=literal_error, input_value='prompts/get', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+ListResourcesRequest.method
+  Input should be 'resources/list' [type=literal_error, input_value='prompts/get', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+ListResourceTemplatesRequest.method
+  Input should be 'resources/templates/list' [type=literal_error, input_value='prompts/get', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+ReadResourceRequest.method
+  Input should be 'resources/read' [type=literal_error, input_value='prompts/get', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+ReadResourceRequest.params.uri
+  Field required [type=missing, input_value={'name': 'explain_convers...', 'target_unit': 'mi'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+SubscribeRequest.method
+  Input should be 'resources/subscribe' [type=literal_error, input_value='prompts/get', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+SubscribeRequest.params.uri
+  Field required [type=missing, input_value={'name': 'explain_convers...', 'target_unit': 'mi'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+UnsubscribeRequest.method
+  Input should be 'resources/unsubscribe' [type=literal_error, input_value='prompts/get', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+UnsubscribeRequest.params.uri
+  Field required [type=missing, input_value={'name': 'explain_convers...', 'target_unit': 'mi'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+CallToolRequest.method
+  Input should be 'tools/call' [type=literal_error, input_value='prompts/get', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+ListToolsRequest.method
+  Input should be 'tools/list' [type=literal_error, input_value='prompts/get', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+GetTaskRequest.method
+  Input should be 'tasks/get' [type=literal_error, input_value='prompts/get', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+GetTaskRequest.params.taskId
+  Field required [type=missing, input_value={'name': 'explain_convers...', 'target_unit': 'mi'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+GetTaskPayloadRequest.method
+  Input should be 'tasks/result' [type=literal_error, input_value='prompts/get', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+GetTaskPayloadRequest.params.taskId
+  Field required [type=missing, input_value={'name': 'explain_convers...', 'target_unit': 'mi'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+ListTasksRequest.method
+  Input should be 'tasks/list' [type=literal_error, input_value='prompts/get', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+CancelTaskRequest.method
+  Input should be 'tasks/cancel' [type=literal_error, input_value='prompts/get', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+CancelTaskRequest.params.taskId
+  Field required [type=missing, input_value={'name': 'explain_convers...', 'target_unit': 'mi'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2026-02-17 10:46:36,754 [TRACE] uvicorn.asgi: 127.0.0.1:55459 - ASGI [17] Send {'type': 'http.response.body', 'body': '<123 bytes>', 'more_body': True}
+2026-02-17 10:46:36,754 [TRACE] uvicorn.asgi: 127.0.0.1:55459 - ASGI [17] Send {'type': 'http.response.body', 'body': '<0 bytes>', 'more_body': False}
+2026-02-17 10:46:36,756 [TRACE] uvicorn.asgi: 127.0.0.1:55459 - ASGI [17] Receive {'type': 'http.disconnect'}
+2026-02-17 10:46:36,756 [TRACE] uvicorn.error: 127.0.0.1:55459 - HTTP connection lost
+2026-02-17 10:46:36,756 [TRACE] uvicorn.asgi: 127.0.0.1:55459 - ASGI [17] Completed
+2026-02-17 10:47:16,402 [TRACE] uvicorn.error: 127.0.0.1:57218 - HTTP connection made
+2026-02-17 10:47:16,403 [TRACE] uvicorn.asgi: 127.0.0.1:57218 - ASGI [18] Started scope={'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8003), 'client': ('127.0.0.1', 57218), 'scheme': 'http', 'method': 'POST', 'root_path': '', 'path': '/mcp/', 'raw_path': b'/mcp/', 'query_string': b'', 'headers': '<...>', 'state': {}}
+2026-02-17 10:47:16,403 [TRACE] uvicorn.asgi: 127.0.0.1:57218 - ASGI [18] Receive {'type': 'http.request', 'body': '<60 bytes>', 'more_body': False}
+2026-02-17 10:47:16,404 [TRACE] uvicorn.asgi: 127.0.0.1:57218 - ASGI [18] Send {'type': 'http.response.start', 'status': 200, 'headers': '<...>'}
+2026-02-17 10:47:16,404 [INFO] uvicorn.access: 127.0.0.1:57218 - "POST /mcp/ HTTP/1.1" 200
+2026-02-17 10:47:16,404 [INFO] mcp.server.lowlevel.server: Processing request of type ListPromptsRequest
+2026-02-17 10:47:16,405 [TRACE] uvicorn.asgi: 127.0.0.1:57218 - ASGI [18] Send {'type': 'http.response.body', 'body': '<353 bytes>', 'more_body': True}
+2026-02-17 10:47:16,405 [TRACE] uvicorn.asgi: 127.0.0.1:57218 - ASGI [18] Send {'type': 'http.response.body', 'body': '<0 bytes>', 'more_body': False}
+2026-02-17 10:47:16,405 [TRACE] uvicorn.asgi: 127.0.0.1:57218 - ASGI [18] Receive {'type': 'http.disconnect'}
+2026-02-17 10:47:16,405 [TRACE] uvicorn.error: 127.0.0.1:57218 - HTTP connection lost
+2026-02-17 10:47:16,406 [TRACE] uvicorn.asgi: 127.0.0.1:57218 - ASGI [18] Completed
+2026-02-17 10:47:31,098 [TRACE] uvicorn.error: 127.0.0.1:57222 - HTTP connection made
+2026-02-17 10:47:31,098 [TRACE] uvicorn.asgi: 127.0.0.1:57222 - ASGI [19] Started scope={'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8003), 'client': ('127.0.0.1', 57222), 'scheme': 'http', 'method': 'POST', 'root_path': '', 'path': '/mcp/', 'raw_path': b'/mcp/', 'query_string': b'', 'headers': '<...>', 'state': {}}
+2026-02-17 10:47:31,098 [TRACE] uvicorn.asgi: 127.0.0.1:57222 - ASGI [19] Receive {'type': 'http.request', 'body': '<153 bytes>', 'more_body': False}
+2026-02-17 10:47:31,098 [TRACE] uvicorn.asgi: 127.0.0.1:57222 - ASGI [19] Send {'type': 'http.response.start', 'status': 200, 'headers': '<...>'}
+2026-02-17 10:47:31,098 [INFO] uvicorn.access: 127.0.0.1:57222 - "POST /mcp/ HTTP/1.1" 200
+2026-02-17 10:47:31,098 [WARNING] root: Failed to validate request: 29 validation errors for ClientRequest
+PingRequest.method
+  Input should be 'ping' [type=literal_error, input_value='prompts/get', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+InitializeRequest.method
+  Input should be 'initialize' [type=literal_error, input_value='prompts/get', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+InitializeRequest.params.protocolVersion
+  Field required [type=missing, input_value={'name': 'explain_convers...', 'target_unit': 'mi'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+InitializeRequest.params.capabilities
+  Field required [type=missing, input_value={'name': 'explain_convers...', 'target_unit': 'mi'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+InitializeRequest.params.clientInfo
+  Field required [type=missing, input_value={'name': 'explain_convers...', 'target_unit': 'mi'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+CompleteRequest.method
+  Input should be 'completion/complete' [type=literal_error, input_value='prompts/get', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+CompleteRequest.params.ref
+  Field required [type=missing, input_value={'name': 'explain_convers...', 'target_unit': 'mi'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+CompleteRequest.params.argument
+  Field required [type=missing, input_value={'name': 'explain_convers...', 'target_unit': 'mi'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+SetLevelRequest.method
+  Input should be 'logging/setLevel' [type=literal_error, input_value='prompts/get', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+SetLevelRequest.params.level
+  Field required [type=missing, input_value={'name': 'explain_convers...', 'target_unit': 'mi'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+GetPromptRequest.params.arguments.input_value
+  Input should be a valid string [type=string_type, input_value=5, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+ListPromptsRequest.method
+  Input should be 'prompts/list' [type=literal_error, input_value='prompts/get', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+ListResourcesRequest.method
+  Input should be 'resources/list' [type=literal_error, input_value='prompts/get', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+ListResourceTemplatesRequest.method
+  Input should be 'resources/templates/list' [type=literal_error, input_value='prompts/get', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+ReadResourceRequest.method
+  Input should be 'resources/read' [type=literal_error, input_value='prompts/get', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+ReadResourceRequest.params.uri
+  Field required [type=missing, input_value={'name': 'explain_convers...', 'target_unit': 'mi'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+SubscribeRequest.method
+  Input should be 'resources/subscribe' [type=literal_error, input_value='prompts/get', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+SubscribeRequest.params.uri
+  Field required [type=missing, input_value={'name': 'explain_convers...', 'target_unit': 'mi'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+UnsubscribeRequest.method
+  Input should be 'resources/unsubscribe' [type=literal_error, input_value='prompts/get', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+UnsubscribeRequest.params.uri
+  Field required [type=missing, input_value={'name': 'explain_convers...', 'target_unit': 'mi'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+CallToolRequest.method
+  Input should be 'tools/call' [type=literal_error, input_value='prompts/get', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+ListToolsRequest.method
+  Input should be 'tools/list' [type=literal_error, input_value='prompts/get', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+GetTaskRequest.method
+  Input should be 'tasks/get' [type=literal_error, input_value='prompts/get', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+GetTaskRequest.params.taskId
+  Field required [type=missing, input_value={'name': 'explain_convers...', 'target_unit': 'mi'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+GetTaskPayloadRequest.method
+  Input should be 'tasks/result' [type=literal_error, input_value='prompts/get', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+GetTaskPayloadRequest.params.taskId
+  Field required [type=missing, input_value={'name': 'explain_convers...', 'target_unit': 'mi'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+ListTasksRequest.method
+  Input should be 'tasks/list' [type=literal_error, input_value='prompts/get', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+CancelTaskRequest.method
+  Input should be 'tasks/cancel' [type=literal_error, input_value='prompts/get', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+CancelTaskRequest.params.taskId
+  Field required [type=missing, input_value={'name': 'explain_convers...', 'target_unit': 'mi'}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2026-02-17 10:47:31,098 [TRACE] uvicorn.asgi: 127.0.0.1:57222 - ASGI [19] Send {'type': 'http.response.body', 'body': '<123 bytes>', 'more_body': True}
+2026-02-17 10:47:31,098 [TRACE] uvicorn.asgi: 127.0.0.1:57222 - ASGI [19] Send {'type': 'http.response.body', 'body': '<0 bytes>', 'more_body': False}
+2026-02-17 10:47:31,098 [TRACE] uvicorn.asgi: 127.0.0.1:57222 - ASGI [19] Receive {'type': 'http.disconnect'}
+2026-02-17 10:47:31,098 [TRACE] uvicorn.error: 127.0.0.1:57222 - HTTP connection lost
+2026-02-17 10:47:31,098 [TRACE] uvicorn.asgi: 127.0.0.1:57222 - ASGI [19] Completed
+2026-02-17 10:55:05,426 [TRACE] uvicorn.error: 127.0.0.1:59571 - HTTP connection made
+2026-02-17 10:55:05,426 [TRACE] uvicorn.asgi: 127.0.0.1:59571 - ASGI [20] Started scope={'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8003), 'client': ('127.0.0.1', 59571), 'scheme': 'http', 'method': 'POST', 'root_path': '', 'path': '/mcp/', 'raw_path': b'/mcp/', 'query_string': b'', 'headers': '<...>', 'state': {}}
+2026-02-17 10:55:05,427 [TRACE] uvicorn.asgi: 127.0.0.1:59571 - ASGI [20] Receive {'type': 'http.request', 'body': '<101 bytes>', 'more_body': False}
+2026-02-17 10:55:05,427 [TRACE] uvicorn.asgi: 127.0.0.1:59571 - ASGI [20] Send {'type': 'http.response.start', 'status': 200, 'headers': '<...>'}
+2026-02-17 10:55:05,427 [INFO] uvicorn.access: 127.0.0.1:59571 - "POST /mcp/ HTTP/1.1" 200
+2026-02-17 10:55:05,428 [INFO] mcp.server.lowlevel.server: Processing request of type GetPromptRequest
+2026-02-17 10:55:05,428 [TRACE] uvicorn.asgi: 127.0.0.1:59571 - ASGI [20] Send {'type': 'http.response.body', 'body': '<600 bytes>', 'more_body': True}
+2026-02-17 10:55:05,429 [TRACE] uvicorn.asgi: 127.0.0.1:59571 - ASGI [20] Send {'type': 'http.response.body', 'body': '<0 bytes>', 'more_body': False}
+2026-02-17 10:55:05,429 [TRACE] uvicorn.asgi: 127.0.0.1:59571 - ASGI [20] Receive {'type': 'http.disconnect'}
+2026-02-17 10:55:05,429 [TRACE] uvicorn.error: 127.0.0.1:59571 - HTTP connection lost
+2026-02-17 10:55:05,430 [TRACE] uvicorn.asgi: 127.0.0.1:59571 - ASGI [20] Completed
+2026-02-17 10:55:27,118 [TRACE] uvicorn.error: 127.0.0.1:61779 - HTTP connection made
+2026-02-17 10:55:27,119 [TRACE] uvicorn.asgi: 127.0.0.1:61779 - ASGI [21] Started scope={'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.3'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8003), 'client': ('127.0.0.1', 61779), 'scheme': 'http', 'method': 'POST', 'root_path': '', 'path': '/mcp/', 'raw_path': b'/mcp/', 'query_string': b'', 'headers': '<...>', 'state': {}}
+2026-02-17 10:55:27,119 [TRACE] uvicorn.asgi: 127.0.0.1:61779 - ASGI [21] Receive {'type': 'http.request', 'body': '<93 bytes>', 'more_body': False}
+2026-02-17 10:55:27,120 [TRACE] uvicorn.asgi: 127.0.0.1:61779 - ASGI [21] Send {'type': 'http.response.start', 'status': 200, 'headers': '<...>'}
+2026-02-17 10:55:27,120 [INFO] uvicorn.access: 127.0.0.1:61779 - "POST /mcp/ HTTP/1.1" 200
+2026-02-17 10:55:27,120 [INFO] mcp.server.lowlevel.server: Processing request of type GetPromptRequest
+2026-02-17 10:55:27,121 [TRACE] uvicorn.asgi: 127.0.0.1:61779 - ASGI [21] Send {'type': 'http.response.body', 'body': '<541 bytes>', 'more_body': True}
+2026-02-17 10:55:27,121 [TRACE] uvicorn.asgi: 127.0.0.1:61779 - ASGI [21] Send {'type': 'http.response.body', 'body': '<0 bytes>', 'more_body': False}
+2026-02-17 10:55:27,121 [TRACE] uvicorn.asgi: 127.0.0.1:61779 - ASGI [21] Receive {'type': 'http.disconnect'}
+2026-02-17 10:55:27,122 [TRACE] uvicorn.error: 127.0.0.1:61779 - HTTP connection lost
+2026-02-17 10:55:27,123 [TRACE] uvicorn.asgi: 127.0.0.1:61779 - ASGI [21] Completed
+2026-02-17 10:59:45,682 [INFO] uvicorn.error: Shutting down
+2026-02-17 10:59:45,776 [INFO] uvicorn.error: Waiting for application shutdown.
+2026-02-17 10:59:45,776 [TRACE] uvicorn.asgi: ASGI [1] Receive {'type': 'lifespan.shutdown'}
+2026-02-17 10:59:45,776 [INFO] mcp.server.streamable_http_manager: StreamableHTTP session manager shutting down
+2026-02-17 10:59:45,777 [TRACE] uvicorn.asgi: ASGI [1] Send {'type': 'lifespan.shutdown.complete'}
+2026-02-17 10:59:45,777 [TRACE] uvicorn.asgi: ASGI [1] Completed
+2026-02-17 10:59:45,777 [INFO] uvicorn.error: Application shutdown complete.
+2026-02-17 10:59:45,778 [INFO] uvicorn.error: Finished server process [14408]

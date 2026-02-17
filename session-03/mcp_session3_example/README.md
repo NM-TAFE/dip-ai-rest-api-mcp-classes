@@ -165,12 +165,13 @@ You’ll see:
 - MCP endpoints served by FastMCP:
   - streamable-http: http://localhost:8003/mcp
   - SSE: http://localhost:8003/sse
+    "$SESSION
 
 ## Try the HTTP endpoints (curl)
 
 ```bash
 # Without pydantic
-curl -X POST "http://localhost:8003/miles-to-ilometers?miles=3.1" \
+curl -X POST "http://localhost:8003/miles-to-kilometers?miles=3.1" \
 
 # If we use pydantic models
 curl -X POST 'http://localhost:8003/celsius-to-fahrenheit?celsius=20' -H 'accept: application/json' -d ''
@@ -221,84 +222,6 @@ npx @modelcontextprotocol/inspector@latest -e DUMMY=1 --url http://localhost:800
 - UI runs on localhost:5173 by default.
 - Change UI port if needed: `CLIENT_PORT=8080 npx @modelcontextprotocol/inspector --url http://localhost:8003/mcp --transport http`
 - Add headers if required: `--header "Authorization: Bearer TOKEN"`.
-
-## Try the HTTP endpoints, with the session ID (curl)
-
-1. Initialise, create and capture the session ID (needed for follow‑up calls):
-
-```bash
-SESSION=$(curl -sD - -o /dev/null -L http://localhost:8003/mcp \
--H 'Content-Type: application/json' \
--H 'Accept: application/json' \
--H 'MCP-Protocol-Version: 2025-06-18' \
--d '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"clientInfo":{"name":"curl","version":"1.0"},"capabilities":{}}}' \
-| awk 'BEGIN{IGNORECASE=1} /^mcp-session-id:/ {sub(/\r$/,""); print $2}');
-echo "SESSION=$SESSION"
-```
-
-2. List available resources:
-
-```bash
-curl -s http://localhost:8003/mcp -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'MCP-Protocol-Version: 2025-06-18' -H "Mcp-Session-Id: 2b9e140e5f4b4cdb904a83d88674f768" -d '{"jsonrpc": "2.0","id": 2, "method": "resources/list", "params": {}}'
-```
-
-```bash
-curl -s http://localhost:8003/mcp -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'MCP-Protocol-Version: 2025-06-18' -H "Mcp-Session-Id: $SESSION" -d '{"jsonrpc":"2.0","id":2,"method":"resources/list","params":{}}'
-```
-
-3. Read a resource (cheatsheet):
-
-```bash
-curl -s http://localhost:8003/mcp \
--H 'Content-Type: application/json' \
--H 'Accept: application/json' \
--H 'MCP-Protocol-Version: 2025-06-18' \
--H "Mcp-Session-Id: $SESSION" \
--d '{
-"jsonrpc": "2.0",
-"id": 3,
-"method": "resources/read",
-"params": {"uri": "resource://unit_reference"}
-}'
-```
-
-4. List prompts:
-
-```bash
-curl -s http://localhost:8003/mcp \
--H 'Content-Type: application/json' \
--H 'Accept: application/json' \
--H 'MCP-Protocol-Version: 2025-06-18' \
--H "Mcp-Session-Id: $SESSION" \
--d '{
-"jsonrpc": "2.0",
-"id": 4,
-"method": "prompts/list",
-"params": {}
-}'
-```
-
-5. Fetch the `explain_conversion` prompt (no arguments required):
-
-```bash
-curl -s http://localhost:8003/mcp \
--H 'Content-Type: application/json' \
--H 'Accept: application/json' \
--H 'MCP-Protocol-Version: 2025-06-18' \
--H "Mcp-Session-Id: $SESSION" \
--d '{
-"jsonrpc": "2.0",
-"id": 5,
-"method": "prompts/get",
-"params": {"name": "explain_conversion"}
-}'
-```
-
-Great question, John! If your MCP server exposes an **HTTP JSON‑RPC 2.0 endpoint**, you can call its **prompts** and **resources** methods using `curl` by POSTing JSON payloads.
-
-Below are practical, copy‑pasteable examples. Replace placeholders like `<SERVER_URL>` and `<TOKEN>` with your actual values.
-
----
 
 ## Headers & Auth (common to all)
 
