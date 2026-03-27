@@ -49,6 +49,7 @@ def troubleshooting_guide() -> str:
         ]
     )
 
+
 # How would we scope this?
 RESOURCE_DEFINITIONS = [
     {
