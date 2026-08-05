@@ -2,53 +2,38 @@
 
 from __future__ import annotations
 
-from typing import List, Dict
+from fastmcp.prompts import Message 
 
-
-def explain_conversion_prompt() -> List[Dict[str, str]]:
+def explain_conversion_prompt() -> list[Message]:
     """
     Message list teaching how a specific conversion works.
-
-    Returns:
-        Conversation template (list of role/content dictionaries).
     """
     return [
-        {
-            "role": "system",
-            "content": (
+        Message(
+            role="user",
+            content=(
                 "You are a clear, encouraging tutor helping a learner understand unit conversions. "
-                "Show the formula, substitute the numbers, and provide the result. Keep it to 5 steps max."
-            ),
-        },
-        {
-            "role": "user",
-            "content": (
+                "Show the formula, substitute the numbers, and provide the result. Keep it to 5 steps max.\n\n"
                 "Explain how to convert {input_value} {input_unit} to {target_unit}. "
                 "Return both the math and the final number."
             ),
-        },
+        ),
     ]
 
 
-def api_usage_prompt() -> List[Dict[str, str]]:
+def api_usage_prompt() -> list[Message]:
     """
     Message list that drafts an HTTP example for the learner.
-
-    Returns:
-        Conversation template (list of role/content dictionaries).
     """
     return [
-        {
-            "role": "system",
-            "content": (
+        Message(
+            role="user",
+            content=(
                 "You write concise API usage snippets. Show a single curl example that calls the correct "
-                "endpoint on http://localhost:8003. Include JSON body and a short explanation line."
+                "endpoint on http://localhost:8003. Include JSON body and a short explanation line.\n\n"
+                "Give me a curl example for the {operation} endpoint."
             ),
-        },
-        {
-            "role": "user",
-            "content": "Give me a curl example for the {operation} endpoint.",
-        },
+        ),
     ]
 
 

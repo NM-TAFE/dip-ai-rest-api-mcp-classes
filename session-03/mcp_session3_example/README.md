@@ -118,14 +118,8 @@ Explore everything (tools, resources, prompts) in a browser.
 
 ```bash
 # with the server already running on http://localhost:8220
-# Prefer HTTP transport:
-npx @modelcontextprotocol/inspector@latest -e DUMMY=1 --url http://localhost:8003/mcp --transport http
-
-# If you need SSE:
-npx @modelcontextprotocol/inspector@latest -e DUMMY=1  --url http://localhost:8003/sse --transport sse
-
-# If env error appears
-npx @modelcontextprotocol/inspector@latest -e DUMMY=1 --url http://localhost:8003/mcp --transport streamable-http
+# Prefer Streamabale HTTP transport:
+npx @modelcontextprotocol/inspector@latest --transport streamable-http --server-url http://localhost:8003/mcp
 ```
 
 - UI runs on localhost:5173 by default.

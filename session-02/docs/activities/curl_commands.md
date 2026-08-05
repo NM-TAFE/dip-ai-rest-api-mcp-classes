@@ -5,5 +5,5 @@ curl --location 'https://myjamjar.com.au/v1/auth/login' --header 'Content-Type: 
 
 ```bash
 # We can test the get method use the token from the command above
-curl --location 'http://myjamjar.com.au/v1/tasks/projects/01kh05asgt1cq3wx9sd6js6jxk' --header 'Authorization: Bearer 6|FCUM8DSMS32LZcgpexHu2JrFohXClNPmO39R4XOP73593169' --header 'Workspaces-Identifier: tenant-pm-001' --header 'X-Integration-Name: Johns-MBP.modem' --header 'Accept: application/json'
+curl --location 'https://myjamjar.com.au/v1/projects' --header 'Authorization: Bearer 152|FArVmLuMxdp7DpSa0H97cI57Dj1nMmCl9ySoozZtc694906d' --header 'Workspaces-Identifier: tenant-pm-026' --header 'X-Integration-Name: Johns-MBP.modem' --header 'Accept: application/json'
 ```
