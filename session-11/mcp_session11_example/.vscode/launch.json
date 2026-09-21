@@ -1,0 +1,27 @@
+{
+  "version": "0.3.0",
+  "configurations": [
+    {
+      "name": "Run Uvicorn HTTP debug",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": [
+        "converter_streamable_http_server:app",
+        "--host",
+        "localhost",
+        "--port",
+        "8003",
+        "--reload"
+      ]
+    },
+    {
+      "name": "Run STDIO Debug",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/converter_stdio_server.py",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}

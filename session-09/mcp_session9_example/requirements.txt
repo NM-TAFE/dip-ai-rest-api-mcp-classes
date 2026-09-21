@@ -1,0 +1,6 @@
+# Our framework
+uvicorn
+fastmcp
+fastapi 
+fastapi-mcp 
+feedparser

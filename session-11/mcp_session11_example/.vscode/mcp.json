@@ -1,0 +1,8 @@
+{
+  "servers": {
+    "UnitConverter": {
+      "command": "python",
+      "args": ["calculator_api_tutorial.py"]
+    }
+  }
+}

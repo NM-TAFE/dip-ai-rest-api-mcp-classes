@@ -1,0 +1,213 @@
+2026-03-23 12:55:53,105 [INFO] httpx: HTTP Request: GET https://pypi.org/pypi/fastmcp/json "HTTP/1.1 200 OK"
+2026-03-23 12:55:53,142 [INFO] fastmcp.server.mixins.transport: Starting MCP server 'Unit Converter (STDIO)' with transport 'stdio'
+2026-03-23 12:55:58,389 [ERROR] mcp.server.lowlevel.server: Received exception from stream: 1 validation error for JSONRPCMessage
+  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='BASE="http://localhost:8...-Version: 2025-06-18"\n', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid
+2026-03-23 12:57:27,133 [WARNING] root: Failed to validate request: 28 validation errors for ClientRequest
+PingRequest.method
+  Input should be 'ping' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+InitializeRequest.params.clientInfo
+  Field required [type=missing, input_value={'protocolVersion': '2025...18', 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+CompleteRequest.method
+  Input should be 'completion/complete' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+CompleteRequest.params.ref
+  Field required [type=missing, input_value={'protocolVersion': '2025...18', 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+CompleteRequest.params.argument
+  Field required [type=missing, input_value={'protocolVersion': '2025...18', 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+SetLevelRequest.method
+  Input should be 'logging/setLevel' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+SetLevelRequest.params.level
+  Field required [type=missing, input_value={'protocolVersion': '2025...18', 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+GetPromptRequest.method
+  Input should be 'prompts/get' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+GetPromptRequest.params.name
+  Field required [type=missing, input_value={'protocolVersion': '2025...18', 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+ListPromptsRequest.method
+  Input should be 'prompts/list' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+ListResourcesRequest.method
+  Input should be 'resources/list' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+ListResourceTemplatesRequest.method
+  Input should be 'resources/templates/list' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+ReadResourceRequest.method
+  Input should be 'resources/read' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+ReadResourceRequest.params.uri
+  Field required [type=missing, input_value={'protocolVersion': '2025...18', 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+SubscribeRequest.method
+  Input should be 'resources/subscribe' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+SubscribeRequest.params.uri
+  Field required [type=missing, input_value={'protocolVersion': '2025...18', 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+UnsubscribeRequest.method
+  Input should be 'resources/unsubscribe' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+UnsubscribeRequest.params.uri
+  Field required [type=missing, input_value={'protocolVersion': '2025...18', 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+CallToolRequest.method
+  Input should be 'tools/call' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+CallToolRequest.params.name
+  Field required [type=missing, input_value={'protocolVersion': '2025...18', 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+ListToolsRequest.method
+  Input should be 'tools/list' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+GetTaskRequest.method
+  Input should be 'tasks/get' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+GetTaskRequest.params.taskId
+  Field required [type=missing, input_value={'protocolVersion': '2025...18', 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+GetTaskPayloadRequest.method
+  Input should be 'tasks/result' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+GetTaskPayloadRequest.params.taskId
+  Field required [type=missing, input_value={'protocolVersion': '2025...18', 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+ListTasksRequest.method
+  Input should be 'tasks/list' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+CancelTaskRequest.method
+  Input should be 'tasks/cancel' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+CancelTaskRequest.params.taskId
+  Field required [type=missing, input_value={'protocolVersion': '2025...18', 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2026-03-23 12:57:34,601 [WARNING] root: Failed to validate request: Received request before initialization was complete
+2026-03-23 12:57:58,290 [INFO] fastmcp.server.mixins.transport: Starting MCP server 'Unit Converter (STDIO)' with transport 'stdio'
+2026-03-23 12:58:09,091 [WARNING] root: Failed to validate request: 28 validation errors for ClientRequest
+PingRequest.method
+  Input should be 'ping' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+InitializeRequest.params.clientInfo
+  Field required [type=missing, input_value={'protocolVersion': '2025...18', 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+CompleteRequest.method
+  Input should be 'completion/complete' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+CompleteRequest.params.ref
+  Field required [type=missing, input_value={'protocolVersion': '2025...18', 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+CompleteRequest.params.argument
+  Field required [type=missing, input_value={'protocolVersion': '2025...18', 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+SetLevelRequest.method
+  Input should be 'logging/setLevel' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+SetLevelRequest.params.level
+  Field required [type=missing, input_value={'protocolVersion': '2025...18', 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+GetPromptRequest.method
+  Input should be 'prompts/get' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+GetPromptRequest.params.name
+  Field required [type=missing, input_value={'protocolVersion': '2025...18', 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+ListPromptsRequest.method
+  Input should be 'prompts/list' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+ListResourcesRequest.method
+  Input should be 'resources/list' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+ListResourceTemplatesRequest.method
+  Input should be 'resources/templates/list' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+ReadResourceRequest.method
+  Input should be 'resources/read' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+ReadResourceRequest.params.uri
+  Field required [type=missing, input_value={'protocolVersion': '2025...18', 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+SubscribeRequest.method
+  Input should be 'resources/subscribe' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+SubscribeRequest.params.uri
+  Field required [type=missing, input_value={'protocolVersion': '2025...18', 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+UnsubscribeRequest.method
+  Input should be 'resources/unsubscribe' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+UnsubscribeRequest.params.uri
+  Field required [type=missing, input_value={'protocolVersion': '2025...18', 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+CallToolRequest.method
+  Input should be 'tools/call' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+CallToolRequest.params.name
+  Field required [type=missing, input_value={'protocolVersion': '2025...18', 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+ListToolsRequest.method
+  Input should be 'tools/list' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+GetTaskRequest.method
+  Input should be 'tasks/get' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+GetTaskRequest.params.taskId
+  Field required [type=missing, input_value={'protocolVersion': '2025...18', 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+GetTaskPayloadRequest.method
+  Input should be 'tasks/result' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+GetTaskPayloadRequest.params.taskId
+  Field required [type=missing, input_value={'protocolVersion': '2025...18', 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+ListTasksRequest.method
+  Input should be 'tasks/list' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+CancelTaskRequest.method
+  Input should be 'tasks/cancel' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+CancelTaskRequest.params.taskId
+  Field required [type=missing, input_value={'protocolVersion': '2025...18', 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+2026-03-23 13:01:10,805 [INFO] mcp.server.lowlevel.server: Processing request of type ListResourcesRequest
+2026-03-23 13:01:10,805 [DEBUG] fastmcp.server.mixins.mcp_operations: [Unit Converter (STDIO)] Handler called: list_resources
+2026-03-23 13:01:17,126 [INFO] mcp.server.lowlevel.server: Processing request of type ReadResourceRequest
+2026-03-23 13:01:17,126 [DEBUG] fastmcp.server.mixins.mcp_operations: [Unit Converter (STDIO)] Handler called: read_resource resource://converter/unit_reference
+2026-03-23 14:29:01,171 [INFO] fastmcp.server.mixins.transport: Starting MCP server 'Unit Converter (STDIO)' with transport 'stdio'
+2026-03-23 14:30:55,070 [INFO] fastmcp.server.mixins.transport: Starting MCP server 'Unit Converter (STDIO)' with transport 'stdio'
+2026-03-25 09:20:16,909 [INFO] httpx: HTTP Request: GET https://pypi.org/pypi/fastmcp/json "HTTP/1.1 200 OK"
+2026-03-25 09:20:16,916 [INFO] fastmcp.server.mixins.transport: Starting MCP server 'Unit Converter (STDIO)' with transport 'stdio'
+2026-03-25 09:20:55,378 [INFO] mcp.server.lowlevel.server: Processing request of type ListResourcesRequest
+2026-03-25 09:20:55,379 [DEBUG] fastmcp.server.mixins.mcp_operations: [Unit Converter (STDIO)] Handler called: list_resources
+2026-03-25 09:21:04,561 [ERROR] mcp.server.lowlevel.server: Received exception from stream: 1 validation error for JSONRPCMessage
+  Invalid JSON: EOF while parsing a value at line 2 column 0 [type=json_invalid, input_value='{"jsonrpc":"2.0","id":3,...urces/read","params":\n', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid
+2026-03-25 09:21:15,186 [INFO] mcp.server.lowlevel.server: Processing request of type ReadResourceRequest
+2026-03-25 09:21:15,187 [DEBUG] fastmcp.server.mixins.mcp_operations: [Unit Converter (STDIO)] Handler called: read_resource resource://converter/unit_reference
+2026-03-25 09:42:41,560 [INFO] fastmcp.server.server: Starting MCP server 'Unit Converter (STDIO)' with transport 'stdio'
+2026-03-25 09:42:41,562 [INFO] docket.worker: Starting worker 'Johns-MacBook-Pro.local#16794' with the following tasks:
+2026-03-25 09:42:41,562 [INFO] docket.worker: * trace(message: str, ...)
+2026-03-25 09:42:41,562 [INFO] docket.worker: * fail(message: str, ...)
+2026-03-25 09:42:41,562 [INFO] docket.worker: * sleep(seconds: float, ...)
+2026-03-25 09:47:18,728 [INFO] fastmcp.server.mixins.transport: Starting MCP server 'Unit Converter (STDIO)' with transport 'stdio'
+2026-03-25 09:47:18,732 [ERROR] mcp.server.lowlevel.server: Received exception from stream: 1 validation error for JSONRPCMessage
+  Invalid JSON: expected value at line 1 column 2 [type=json_invalid, input_value=' source /Users/robbozino...le/.venv/bin/activate\n', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid
+2026-03-25 09:47:54,305 [INFO] mcp.server.lowlevel.server: Processing request of type ListResourcesRequest
+2026-03-25 09:47:54,305 [DEBUG] fastmcp.server.mixins.mcp_operations: [Unit Converter (STDIO)] Handler called: list_resources
+2026-03-25 09:48:01,713 [INFO] mcp.server.lowlevel.server: Processing request of type ReadResourceRequest
+2026-03-25 09:48:01,713 [DEBUG] fastmcp.server.mixins.mcp_operations: [Unit Converter (STDIO)] Handler called: read_resource resource://converter/unit_reference
+2026-03-27 15:02:38,300 [INFO] httpx: HTTP Request: GET https://pypi.org/pypi/fastmcp/json "HTTP/1.1 200 OK"
+2026-03-27 15:02:38,315 [INFO] fastmcp.server.mixins.transport: Starting MCP server 'Unit Converter (STDIO)' with transport 'stdio'
+2026-03-27 15:08:21,644 [INFO] mcp.server.lowlevel.server: Processing request of type ListResourcesRequest
+2026-03-27 15:08:21,644 [DEBUG] fastmcp.server.mixins.mcp_operations: [Unit Converter (STDIO)] Handler called: list_resources
+2026-03-27 15:08:43,037 [INFO] mcp.server.lowlevel.server: Processing request of type ReadResourceRequest
+2026-03-27 15:08:43,037 [DEBUG] fastmcp.server.mixins.mcp_operations: [Unit Converter (STDIO)] Handler called: read_resource resource://converter/unit_reference
+2026-04-20 12:10:22,412 [INFO] httpx: HTTP Request: GET https://pypi.org/pypi/fastmcp/json "HTTP/1.1 200 OK"
+2026-04-20 12:10:22,441 [INFO] fastmcp.server.mixins.transport: Starting MCP server 'Unit Converter (STDIO)' with transport 'stdio'

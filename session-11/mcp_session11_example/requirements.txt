@@ -1,0 +1,7 @@
+# Our framework
+uvicorn
+fastmcp
+fastapi 
+fastapi-mcp 
+feedparser
+# pydantic. This creates an error in NM Tafe computers
