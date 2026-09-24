@@ -1,5 +1,0 @@
-2026-03-02 15:59:16,049 [INFO] fastmcp.server.mixins.transport: Starting MCP server 'Unit Converter (STDIO)' with transport 'stdio'
-2026-03-02 16:00:11,105 [INFO] mcp.server.lowlevel.server: Processing request of type ListToolsRequest
-2026-03-02 16:00:11,105 [DEBUG] fastmcp.server.mixins.mcp_operations: [Unit Converter (STDIO)] Handler called: list_tools
-2026-03-02 16:00:28,249 [INFO] mcp.server.lowlevel.server: Processing request of type CallToolRequest
-2026-03-02 16:00:28,249 [DEBUG] fastmcp.server.mixins.mcp_operations: [Unit Converter (STDIO)] Handler called: call_tool celsius_to_fahrenheit with {'celsius': 25}

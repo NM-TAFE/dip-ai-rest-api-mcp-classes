@@ -1,0 +1,55 @@
+{
+  "jsonrpc": "2.0",
+  "id": 2,
+  "result": {
+    "tools": [
+      {
+        "name": "celsius_to_fahrenheit_celsius_to_fahrenheit_post",
+        "description": "HTTP endpoint: convert Celsius to Fahrenheit.\n\nArgs:\n    celsius: Temperature in Celsius.\n\nReturns:\n    JSON dict with the result and operation name.",
+        "inputSchema": {
+          "type": "object",
+          "properties": { "celsius": { "type": "number", "title": "Celsius" } },
+          "required": ["celsius"]
+        },
+        "_meta": { "_fastmcp": { "tags": ["unit-conversion"] } }
+      },
+      {
+        "name": "fahrenheit_to_celsius_fahrenheit_to_celsius_post",
+        "description": "HTTP endpoint: convert Fahrenheit to Celsius.\n\nArgs:\n    fahrenheit: Temperature in Fahrenheit.\n\nReturns:\n    JSON dict with the result and operation name.",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "fahrenheit": { "type": "number", "title": "Fahrenheit" }
+          },
+          "required": ["fahrenheit"]
+        },
+        "_meta": { "_fastmcp": { "tags": ["unit-conversion"] } }
+      },
+      {
+        "name": "kilometers_to_miles_kilometers_to_miles_post",
+        "description": "HTTP endpoint: convert kilometers to miles.\n\nArgs:\n    kilometers: Distance in kilometers.\n\nReturns:\n    JSON dict with the result and operation name.",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "kilometers": { "type": "number", "title": "Kilometers" }
+          },
+          "required": ["kilometers"]
+        },
+        "_meta": { "_fastmcp": { "tags": ["unit-conversion"] } }
+      },
+      {
+        "name": "miles_to_kilometers_miles_to_kilometers_post",
+        "description": "HTTP endpoint: convert miles to kilometers with input validation.\n\nArgs:\n    miles: Distance in miles.\n\nReturns:\n    JSON dict with the result and operation name, or an error message.",
+        "inputSchema": {
+          "type": "object",
+          "properties": { "miles": { "type": "number", "title": "Miles" } },
+          "required": ["miles"]
+        },
+        "_meta": { "_fastmcp": { "tags": ["unit-conversion"] } }
+      }
+    ]
+  }
+},
+
+
+{"jsonrpc":"2.0","id":1,"result":{"protocolVersion":"2025-06-18","capabilities":{"experimental":{},"prompts":{"listChanged":true},"resources":{"subscribe":false,"listChanged":true},"tools":{"listChanged":true},"extensions":{"io.modelcontextprotocol/ui":{}}},"serverInfo":{"name":"Unit Converter API with MCP","version":"3.0.0"},"instructions":"Unit conversion tools with supporting resources and prompts."}}
