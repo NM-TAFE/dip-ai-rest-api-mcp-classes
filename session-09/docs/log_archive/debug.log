@@ -1,0 +1,138 @@
+2026-02-24 12:04:10,287 [DEBUG] mcp: Logging configured. Writing to logs\debug.log
+2026-02-24 12:04:10,287 [DEBUG] mcp.server.lowlevel.server: Initializing server 'Unit Converter (STDIO)'
+2026-02-24 12:04:10,287 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListToolsRequest
+2026-02-24 12:04:10,287 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListResourcesRequest
+2026-02-24 12:04:10,287 [DEBUG] mcp.server.lowlevel.server: Registering handler for PromptListRequest
+2026-02-24 12:04:10,287 [DEBUG] mcp.server.lowlevel.server: Registering handler for CallToolRequest
+2026-02-24 12:04:14,870 [DEBUG] mcp: Logging configured. Writing to logs\debug.log
+2026-02-24 12:04:14,871 [DEBUG] mcp.server.lowlevel.server: Initializing server 'Unit Converter (STDIO)'
+2026-02-24 12:04:14,875 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListToolsRequest
+2026-02-24 12:04:14,875 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListResourcesRequest
+2026-02-24 12:04:14,875 [DEBUG] mcp.server.lowlevel.server: Registering handler for PromptListRequest
+2026-02-24 12:04:14,875 [DEBUG] mcp.server.lowlevel.server: Registering handler for CallToolRequest
+2026-02-24 12:04:19,385 [DEBUG] mcp: Logging configured. Writing to logs\debug.log
+2026-02-24 12:04:19,385 [DEBUG] mcp.server.lowlevel.server: Initializing server 'Unit Converter (STDIO)'
+2026-02-24 12:04:19,385 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListToolsRequest
+2026-02-24 12:04:19,385 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListResourcesRequest
+2026-02-24 12:04:19,393 [DEBUG] mcp.server.lowlevel.server: Registering handler for PromptListRequest
+2026-02-24 12:04:19,393 [DEBUG] mcp.server.lowlevel.server: Registering handler for CallToolRequest
+2026-02-24 12:04:23,888 [DEBUG] mcp: Logging configured. Writing to logs\debug.log
+2026-02-24 12:04:23,889 [DEBUG] mcp.server.lowlevel.server: Initializing server 'Unit Converter (STDIO)'
+2026-02-24 12:04:23,891 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListToolsRequest
+2026-02-24 12:04:23,891 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListResourcesRequest
+2026-02-24 12:04:23,891 [DEBUG] mcp.server.lowlevel.server: Registering handler for PromptListRequest
+2026-02-24 12:04:23,891 [DEBUG] mcp.server.lowlevel.server: Registering handler for CallToolRequest
+2026-02-24 12:04:28,169 [DEBUG] mcp: Logging configured. Writing to logs\debug.log
+2026-02-24 12:04:28,169 [DEBUG] mcp.server.lowlevel.server: Initializing server 'Unit Converter (STDIO)'
+2026-02-24 12:04:28,182 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListToolsRequest
+2026-02-24 12:04:28,182 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListResourcesRequest
+2026-02-24 12:04:28,182 [DEBUG] mcp.server.lowlevel.server: Registering handler for PromptListRequest
+2026-02-24 12:04:28,182 [DEBUG] mcp.server.lowlevel.server: Registering handler for CallToolRequest
+2026-02-24 12:04:28,534 [DEBUG] mcp: Logging configured. Writing to logs\debug.log
+2026-02-24 12:04:28,534 [DEBUG] mcp.server.lowlevel.server: Initializing server 'Unit Converter (STDIO)'
+2026-02-24 12:04:28,534 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListToolsRequest
+2026-02-24 12:04:28,534 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListResourcesRequest
+2026-02-24 12:04:28,534 [DEBUG] mcp.server.lowlevel.server: Registering handler for PromptListRequest
+2026-02-24 12:04:28,534 [DEBUG] mcp.server.lowlevel.server: Registering handler for CallToolRequest
+2026-02-24 12:04:33,053 [DEBUG] mcp: Logging configured. Writing to logs\debug.log
+2026-02-24 12:04:33,053 [DEBUG] mcp.server.lowlevel.server: Initializing server 'Unit Converter (STDIO)'
+2026-02-24 12:04:33,053 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListToolsRequest
+2026-02-24 12:04:33,053 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListResourcesRequest
+2026-02-24 12:04:33,053 [DEBUG] mcp.server.lowlevel.server: Registering handler for PromptListRequest
+2026-02-24 12:04:33,053 [DEBUG] mcp.server.lowlevel.server: Registering handler for CallToolRequest
+2026-02-24 12:04:33,706 [DEBUG] mcp: Logging configured. Writing to logs\debug.log
+2026-02-24 12:04:33,706 [DEBUG] mcp.server.lowlevel.server: Initializing server 'Unit Converter (STDIO)'
+2026-02-24 12:04:33,706 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListToolsRequest
+2026-02-24 12:04:33,706 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListResourcesRequest
+2026-02-24 12:04:33,706 [DEBUG] mcp.server.lowlevel.server: Registering handler for PromptListRequest
+2026-02-24 12:04:33,706 [DEBUG] mcp.server.lowlevel.server: Registering handler for CallToolRequest
+2026-02-24 12:04:37,823 [DEBUG] mcp: Logging configured. Writing to logs\debug.log
+2026-02-24 12:04:37,831 [DEBUG] mcp.server.lowlevel.server: Initializing server 'Unit Converter (STDIO)'
+2026-02-24 12:04:37,831 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListToolsRequest
+2026-02-24 12:04:37,831 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListResourcesRequest
+2026-02-24 12:04:37,831 [DEBUG] mcp.server.lowlevel.server: Registering handler for PromptListRequest
+2026-02-24 12:04:37,831 [DEBUG] mcp.server.lowlevel.server: Registering handler for CallToolRequest
+2026-02-24 12:04:38,384 [DEBUG] mcp: Logging configured. Writing to logs\debug.log
+2026-02-24 12:04:38,384 [DEBUG] mcp.server.lowlevel.server: Initializing server 'Unit Converter (STDIO)'
+2026-02-24 12:04:38,384 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListToolsRequest
+2026-02-24 12:04:38,384 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListResourcesRequest
+2026-02-24 12:04:38,384 [DEBUG] mcp.server.lowlevel.server: Registering handler for PromptListRequest
+2026-02-24 12:04:38,384 [DEBUG] mcp.server.lowlevel.server: Registering handler for CallToolRequest
+2026-02-24 12:04:42,467 [DEBUG] mcp: Logging configured. Writing to logs\debug.log
+2026-02-24 12:04:42,468 [DEBUG] mcp.server.lowlevel.server: Initializing server 'Unit Converter (STDIO)'
+2026-02-24 12:04:42,468 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListToolsRequest
+2026-02-24 12:04:42,468 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListResourcesRequest
+2026-02-24 12:04:42,468 [DEBUG] mcp.server.lowlevel.server: Registering handler for PromptListRequest
+2026-02-24 12:04:42,468 [DEBUG] mcp.server.lowlevel.server: Registering handler for CallToolRequest
+2026-02-24 12:04:43,058 [DEBUG] mcp: Logging configured. Writing to logs\debug.log
+2026-02-24 12:04:43,059 [DEBUG] mcp.server.lowlevel.server: Initializing server 'Unit Converter (STDIO)'
+2026-02-24 12:04:43,059 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListToolsRequest
+2026-02-24 12:04:43,060 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListResourcesRequest
+2026-02-24 12:04:43,060 [DEBUG] mcp.server.lowlevel.server: Registering handler for PromptListRequest
+2026-02-24 12:04:43,060 [DEBUG] mcp.server.lowlevel.server: Registering handler for CallToolRequest
+2026-02-24 12:04:47,102 [DEBUG] mcp: Logging configured. Writing to logs\debug.log
+2026-02-24 12:04:47,102 [DEBUG] mcp.server.lowlevel.server: Initializing server 'Unit Converter (STDIO)'
+2026-02-24 12:04:47,102 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListToolsRequest
+2026-02-24 12:04:47,102 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListResourcesRequest
+2026-02-24 12:04:47,102 [DEBUG] mcp.server.lowlevel.server: Registering handler for PromptListRequest
+2026-02-24 12:04:47,102 [DEBUG] mcp.server.lowlevel.server: Registering handler for CallToolRequest
+2026-02-24 12:04:47,718 [DEBUG] mcp: Logging configured. Writing to logs\debug.log
+2026-02-24 12:04:47,718 [DEBUG] mcp.server.lowlevel.server: Initializing server 'Unit Converter (STDIO)'
+2026-02-24 12:04:47,718 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListToolsRequest
+2026-02-24 12:04:47,718 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListResourcesRequest
+2026-02-24 12:04:47,718 [DEBUG] mcp.server.lowlevel.server: Registering handler for PromptListRequest
+2026-02-24 12:04:47,718 [DEBUG] mcp.server.lowlevel.server: Registering handler for CallToolRequest
+2026-02-24 12:04:51,735 [DEBUG] mcp: Logging configured. Writing to logs\debug.log
+2026-02-24 12:04:51,735 [DEBUG] mcp.server.lowlevel.server: Initializing server 'Unit Converter (STDIO)'
+2026-02-24 12:04:51,735 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListToolsRequest
+2026-02-24 12:04:51,747 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListResourcesRequest
+2026-02-24 12:04:51,747 [DEBUG] mcp.server.lowlevel.server: Registering handler for PromptListRequest
+2026-02-24 12:04:51,747 [DEBUG] mcp.server.lowlevel.server: Registering handler for CallToolRequest
+2026-02-24 12:04:52,470 [DEBUG] mcp: Logging configured. Writing to logs\debug.log
+2026-02-24 12:04:52,471 [DEBUG] mcp.server.lowlevel.server: Initializing server 'Unit Converter (STDIO)'
+2026-02-24 12:04:52,472 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListToolsRequest
+2026-02-24 12:04:52,472 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListResourcesRequest
+2026-02-24 12:04:52,472 [DEBUG] mcp.server.lowlevel.server: Registering handler for PromptListRequest
+2026-02-24 12:04:52,472 [DEBUG] mcp.server.lowlevel.server: Registering handler for CallToolRequest
+2026-02-24 12:04:56,596 [DEBUG] mcp: Logging configured. Writing to logs\debug.log
+2026-02-24 12:04:56,597 [DEBUG] mcp.server.lowlevel.server: Initializing server 'Unit Converter (STDIO)'
+2026-02-24 12:04:56,598 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListToolsRequest
+2026-02-24 12:04:56,598 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListResourcesRequest
+2026-02-24 12:04:56,598 [DEBUG] mcp.server.lowlevel.server: Registering handler for PromptListRequest
+2026-02-24 12:04:56,598 [DEBUG] mcp.server.lowlevel.server: Registering handler for CallToolRequest
+2026-02-24 12:04:57,375 [DEBUG] mcp: Logging configured. Writing to logs\debug.log
+2026-02-24 12:04:57,376 [DEBUG] mcp.server.lowlevel.server: Initializing server 'Unit Converter (STDIO)'
+2026-02-24 12:04:57,377 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListToolsRequest
+2026-02-24 12:04:57,377 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListResourcesRequest
+2026-02-24 12:04:57,377 [DEBUG] mcp.server.lowlevel.server: Registering handler for PromptListRequest
+2026-02-24 12:04:57,377 [DEBUG] mcp.server.lowlevel.server: Registering handler for CallToolRequest
+2026-02-24 12:05:02,318 [DEBUG] mcp: Logging configured. Writing to logs\debug.log
+2026-02-24 12:05:02,318 [DEBUG] mcp.server.lowlevel.server: Initializing server 'Unit Converter (STDIO)'
+2026-02-24 12:05:02,318 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListToolsRequest
+2026-02-24 12:05:02,318 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListResourcesRequest
+2026-02-24 12:05:02,318 [DEBUG] mcp.server.lowlevel.server: Registering handler for PromptListRequest
+2026-02-24 12:05:02,318 [DEBUG] mcp.server.lowlevel.server: Registering handler for CallToolRequest
+2026-02-24 12:05:03,136 [DEBUG] mcp: Logging configured. Writing to logs\debug.log
+2026-02-24 12:05:03,138 [DEBUG] mcp.server.lowlevel.server: Initializing server 'Unit Converter (STDIO)'
+2026-02-24 12:05:03,138 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListToolsRequest
+2026-02-24 12:05:03,138 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListResourcesRequest
+2026-02-24 12:05:03,138 [DEBUG] mcp.server.lowlevel.server: Registering handler for PromptListRequest
+2026-02-24 12:05:03,138 [DEBUG] mcp.server.lowlevel.server: Registering handler for CallToolRequest
+2026-02-24 12:05:06,967 [DEBUG] mcp: Logging configured. Writing to logs\debug.log
+2026-02-24 12:05:06,969 [DEBUG] mcp.server.lowlevel.server: Initializing server 'Unit Converter (STDIO)'
+2026-02-24 12:05:06,971 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListToolsRequest
+2026-02-24 12:05:06,971 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListResourcesRequest
+2026-02-24 12:05:06,971 [DEBUG] mcp.server.lowlevel.server: Registering handler for PromptListRequest
+2026-02-24 12:05:06,971 [DEBUG] mcp.server.lowlevel.server: Registering handler for CallToolRequest
+2026-02-24 12:05:08,085 [DEBUG] mcp: Logging configured. Writing to logs\debug.log
+2026-02-24 12:05:08,085 [DEBUG] mcp.server.lowlevel.server: Initializing server 'Unit Converter (STDIO)'
+2026-02-24 12:05:08,085 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListToolsRequest
+2026-02-24 12:05:08,085 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListResourcesRequest
+2026-02-24 12:05:08,085 [DEBUG] mcp.server.lowlevel.server: Registering handler for PromptListRequest
+2026-02-24 12:05:08,085 [DEBUG] mcp.server.lowlevel.server: Registering handler for CallToolRequest
+2026-02-24 12:05:11,938 [DEBUG] mcp: Logging configured. Writing to logs\debug.log
+2026-02-24 12:05:11,939 [DEBUG] mcp.server.lowlevel.server: Initializing server 'Unit Converter (STDIO)'
+2026-02-24 12:05:11,940 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListToolsRequest
+2026-02-24 12:05:11,940 [DEBUG] mcp.server.lowlevel.server: Registering handler for ListResourcesRequest
+2026-02-24 12:05:11,940 [DEBUG] mcp.server.lowlevel.server: Registering handler for PromptListRequest
+2026-02-24 12:05:11,941 [DEBUG] mcp.server.lowlevel.server: Registering handler for CallToolRequest
